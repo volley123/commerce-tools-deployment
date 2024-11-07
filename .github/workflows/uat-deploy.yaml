@@ -2,7 +2,8 @@ name: UAT Deployment
 
 on:
   push:
-    tags:
+   branches: [dev]
+   tags:
       - 'uat-*'  # Only triggers on tags with prefix 'uat-'
 
 jobs:
