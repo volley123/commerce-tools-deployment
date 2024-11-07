@@ -3,7 +3,7 @@ name: UAT Deployment
 on:
   push:
     tags:
-      - 'uat-ready-v1.0'  # Only triggers on tags with prefix 'uat-'
+      - 'uat-*'  # Only triggers on tags with prefix 'uat-'
 
 jobs:
   deploy-uat:
